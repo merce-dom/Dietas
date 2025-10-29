@@ -1,0 +1,21 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px); /* resta el alto de la navbar */
+  margin-top: 70px; /* empuja el contenido debajo de la navbar */
+  font-family: Arial, sans-serif;
+}
+
+.section-a {
+  height: 25%; /* parte superior (una cuarta parte de la altura disponible) */
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ccc;
+  padding: 20px;
+}
+
+.section-b {
+  flex: 1; /* ocupa el resto */
+  background-color: #ffffff;
+  padding: 20px;
+  overflow-y: auto; /* scroll si hay mucho contenido */
+}
